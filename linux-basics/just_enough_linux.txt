@@ -1,0 +1,35 @@
+Goal to cover
+Linux Basics:
+-Linux CLI
+-VI Editor
+-package Management
+-Service Management
+-------------------------------------------------------
+Just Enough Linux:
+
+The text based command line interface that helps you run commands to interact with the operating system is called the Linux shell.
+
+Types of Linux Shells:
+
+- Bourne Shell(sh Shell) , - C Shell(csh or tcsh)
+- Z Shell(zsh) , - Bourne again Shell(bash)
+
+-------------------------------------------------------------
+
+Basic Commands:
+- echo $SHELL : /bin/bash  "To see which shell we are in"
+- echo Hi : Hi "prints the environment variable or strings the to screen"
+- ls : File.txt my_dir1 file.conf "List files & Folders"
+- cd my_dir1 "change directory"
+- pwd : /home/my_dir1 "present working Directory"
+- mkdir new_directory "make Directory"
+- cd new_directory; mkdir www; pwd : /home/my_dir1/new_directory "Multiple commands"
+- mkdir -p /tmp/asia/india/bangalore "Make Directory Hierarchy"
+- rm -r /tmp/my_dir1 "Remove Dir"
+- cp -r my_dir1 /tmp/my_dir1 "copy dir"
+- touch file.txt " create file"
+- cat > file.txt : This is some sample content (ctlr+d) "add content to file"
+- cat file.txt " to display the content"
+- cp new_file.txt copy_file.txt "copy file from source to target destination"
+- mv new_file.txt sample_file.txt "Move(rename)"
+- rm new_file.txt "Remove(Delete)file
