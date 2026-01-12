@@ -1,0 +1,29 @@
+It comes installed with most os and its comes with command mode and insert mode.
+
+command mode is by default and do activites such as copy , paste , navigate between lines.
+
+Insert mode gets activated by smaller case i and can edit the content of the file . 
+
+press Esc to go back to command mode 
+
+Move around using arow keys and k,hjl
+
+To delete a character use x and for a line use dd
+
+to copy use yy to paste p
+
+scroll up ctrl +u scroll down ctrl +d
+
+commands :
+
+save :w :w filename
+
+Quit(discard) :q
+
+Save+Quit :wq 
+
+Find use / and word ex : /of press 'n' to move to rest of the occurences
+
+
+
+- vi index.html "opens the vi editor with both modes"

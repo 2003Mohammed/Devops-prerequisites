@@ -1,0 +1,29 @@
+User Accounts :
+
+- whoami : md "specifies the current user"
+- id : uid=101(md) gid=101(md) groups=101(md) "give the id of user"
+- su Aparna : password: "switch user"
+- ssh aparna@192.168.1.1 "secure shell login "
+- ls /root "cannot opern directory  /root:permision denied"
+- sudo ls /root "gets super do user privileges form root "
+
+Download Files :
+
+- curl http://www.some-site.com/f1.txt -o "download a file from internet to a specific file in your local machine"
+- wget http://www.some-site.com/f1.txt -o f1.txt : somefile.txt 
+
+Check Os version:
+ 
+- ls /etc/*release*/ "a wildcard like this can disply the release's"
+- cat /etc?*relsease* "Displays the content
+
+Package mangers:
+centos uses RPM (RED HAT PACAKAGE MANAGER)
+
+- rpm -i telnet.rpm "install packages"
+- rpm -e telnet.rpm "uninstall packages"
+- rpm -q telnet.rpm "Query Packages"
+
+- yum install ansible "install packages"
+YUM RUNS RPM UNDER ITS HOOD
+- yum repolist 
