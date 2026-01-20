@@ -1,0 +1,26 @@
+# Linux Networking Basics
+
+Networking knowledge is mandatory for DevOps engineers.
+
+## Check Network Configuration
+- ip addr
+- ifconfig
+
+## Connectivity Testing
+- ping google.com
+- traceroute google.com
+
+## DNS Lookup
+- nslookup google.com
+- dig google.com
+
+## Port & Service Checks
+- netstat -tulpn
+- ss -lntp
+
+## Remote Access
+- ssh user@server_ip
+- scp file.txt user@server:/path
+
+## DevOps Use Case
+Used for debugging connectivity issues, load balancers, APIs, and cloud networking.
