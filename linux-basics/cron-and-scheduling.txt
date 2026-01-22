@@ -1,0 +1,21 @@
+# Cron Jobs and Scheduling
+
+Cron automates repetitive tasks.
+
+## Crontab
+- crontab -l
+- crontab -e
+
+## Format
+* * * * * command
+(min hour day month weekday)
+
+Example:
+0 2 * * * backup.sh
+
+## System Cron
+- /etc/crontab
+- /etc/cron.d/
+
+## DevOps Use Case
+Log cleanup, backups, health checks.
