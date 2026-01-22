@@ -1,0 +1,25 @@
+# File Permissions and Ownership
+
+Linux uses permissions to control access to files and directories.
+
+## Permission Types
+- r : read
+- w : write
+- x : execute
+
+## View Permissions
+- ls -l
+
+Example:
+-rwxr-xr-- 1 user group file.sh
+
+## Change Permissions
+- chmod 755 file.sh
+- chmod +x script.sh
+
+## Ownership
+- chown user:group file.txt
+- chown -R user:group directory/
+
+## DevOps Use Case
+Incorrect permissions are a common cause of application and deployment failures.
