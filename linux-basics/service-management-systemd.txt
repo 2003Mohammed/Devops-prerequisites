@@ -1,0 +1,21 @@
+# Service Management with systemd
+
+Most modern Linux distributions use systemd to manage services.
+
+## Common Commands
+- systemctl status nginx
+- systemctl start nginx
+- systemctl stop nginx
+- systemctl restart nginx
+- systemctl enable nginx
+- systemctl disable nginx
+
+## Check Boot Services
+- systemctl list-unit-files --type=service
+
+## Logs for Services
+- journalctl -u nginx
+- journalctl -xe
+
+## DevOps Use Case
+Critical for managing application services, Docker, Kubernetes components, and CI/CD agents.
