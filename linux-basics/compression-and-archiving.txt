@@ -1,0 +1,18 @@
+# Compression and Archiving
+
+Used for backups, artifacts, and log rotation.
+
+## tar
+- tar -cvf files.tar file1 file2
+- tar -xvf files.tar
+
+## gzip / gunzip
+- gzip file.txt
+- gunzip file.txt.gz
+
+## zip
+- zip app.zip app/
+- unzip app.zip
+
+## DevOps Use Case
+Used in CI pipelines, backups, artifact storage.
