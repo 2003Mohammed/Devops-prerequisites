@@ -1,0 +1,20 @@
+# Filesystem and Disk Management (DevOps Prerequisite)
+
+Understanding disks and filesystems is critical for server reliability.
+
+## Disk Information
+- df -h : disk usage
+- du -sh /dir : directory size
+- lsblk : list block devices
+- mount : mounted filesystems
+
+## Mounting
+- mount /dev/xvdf /data
+- umount /data
+
+## Filesystem Types
+- ext4
+- xfs
+
+## DevOps Use Case
+Used when disks fill up, pods crash due to no space, or cloud volumes are attached.
