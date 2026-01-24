@@ -1,0 +1,31 @@
+# Conditions and Loops
+
+## If Conditions
+if [ $x -gt 10 ]; then
+  echo "Greater"
+elif [ $x -eq 10 ]; then
+  echo "Equal"
+else
+  echo "Smaller"
+fi
+
+## Comparison Operators
+-eq equal
+-ne not equal
+-gt greater
+-lt less
+-f file exists
+-d directory exists
+
+## For Loop
+for env in dev qa prod; do
+  echo $env
+done
+
+## While Loop
+while read line; do
+  echo $line
+done < file.txt
+
+## DevOps Use Case
+Used for environment checks, file iteration, bulk operations.
