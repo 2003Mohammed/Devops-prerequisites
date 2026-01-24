@@ -1,0 +1,19 @@
+# Debugging and Safe Shell Scripts
+
+## Debug Mode
+set -x
+
+## Exit on Error
+set -e
+
+## Treat unset variables as error
+set -u
+
+## Combine
+set -euxo pipefail
+
+## Trap
+trap "echo Error occurred" ERR
+
+## DevOps Use Case
+Prevents silent failures in production automation.
