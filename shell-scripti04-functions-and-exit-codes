@@ -1,0 +1,24 @@
+# Functions and Exit Codes
+
+## Functions
+deploy() {
+  echo "Deploying app"
+}
+
+deploy
+
+## Exit Codes
+0 → success
+1–255 → failure
+
+command
+echo $?
+
+## Custom Exit
+if [ ! -f app.conf ]; then
+  echo "Missing config"
+  exit 1
+fi
+
+## DevOps Use Case
+Used in CI pipelines to fail builds safely.
