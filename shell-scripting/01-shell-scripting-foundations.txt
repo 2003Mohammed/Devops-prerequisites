@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Shell Scripting Foundations (DevOps Focus)
 
 Shell scripting is used to automate Linux tasks, CI/CD pipelines, server provisioning,
@@ -31,3 +32,38 @@ echo $date
 
 ## DevOps Use Case
 Used to glue Linux, cloud, Docker, and CI/CD steps together.
+=======
+# Shell Scripting Foundations (DevOps Focus)
+
+Shell scripting is used to automate Linux tasks, CI/CD pipelines, server provisioning,
+log handling, and deployment workflows.
+
+## What is a Shell Script?
+A shell script is a file containing a sequence of Linux commands executed by a shell.
+
+## Shebang
+#!/bin/bash
+Tells the OS which shell to use.
+
+## Creating a Script
+touch script.sh
+chmod +x script.sh
+./script.sh
+
+## Variables
+name="devops"
+count=5
+echo $name
+echo ${count}
+
+## Quotes
+"double quotes" → variables expand
+'single quotes' → variables do NOT expand
+
+## Command Substitution
+date=$(date)
+echo $date
+
+## DevOps Use Case
+Used to glue Linux, cloud, Docker, and CI/CD steps together.
+>>>>>>> f1d63a71602eea321e8ca3d5cccd4156d862ef75

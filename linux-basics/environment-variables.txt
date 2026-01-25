@@ -1,0 +1,19 @@
+# Environment Variables in Linux
+
+Environment variables store system and application configuration.
+
+## View Variables
+- env
+- printenv
+- echo $PATH
+
+## Set Variables
+- export APP_ENV=production
+
+## Persistent Variables
+- ~/.bashrc
+- ~/.bash_profile
+- /etc/environment
+
+## DevOps Use Case
+Used heavily for application configuration, secrets handling, and CI/CD pipelines.

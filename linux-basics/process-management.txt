@@ -1,0 +1,29 @@
+# Process Management in Linux (DevOps Prerequisite)
+
+A process is a running instance of a program. Managing processes is critical for troubleshooting, performance tuning, and production stability.
+
+## Viewing Processes
+- ps : shows processes for current shell
+- ps -ef : shows all running processes
+- top : real-time process monitoring
+- htop : enhanced version of top (if installed)
+
+## Process States
+- Running
+- Sleeping
+- Stopped
+- Zombie
+
+## Killing Processes
+- kill PID : sends SIGTERM
+- kill -9 PID : force kill (SIGKILL)
+- pkill nginx : kill by process name
+
+## Background & Foreground Jobs
+- command & : run in background
+- jobs : list background jobs
+- fg %1 : bring job to foreground
+- bg %1 : resume job in background
+
+## DevOps Use Case
+Used when services hang, memory spikes occur, or applications crash in production.
