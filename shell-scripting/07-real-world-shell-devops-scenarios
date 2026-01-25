@@ -1,0 +1,16 @@
+# Real-World Shell Scripting Scenarios
+
+## Disk Alert
+df -h | grep "/dev/xvda"
+
+## Process Check
+ps -ef | grep nginx
+
+## Service Health
+systemctl is-active nginx
+
+## Backup Script
+tar -czf backup.tar.gz /data
+
+## DevOps Use Case
+Daily automation, monitoring, production support.

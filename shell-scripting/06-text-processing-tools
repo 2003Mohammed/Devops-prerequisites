@@ -1,0 +1,20 @@
+# Text Processing Tools (DevOps Gold)
+
+## grep
+grep "ERROR" app.log
+grep -i error app.log
+
+## awk
+awk '{print $1}' file.txt
+
+## sed
+sed 's/dev/prod/g' file.txt
+
+## cut
+cut -d ":" -f1 /etc/passwd
+
+## sort & uniq
+sort file.txt | uniq
+
+## DevOps Use Case
+Parsing logs, configs, YAMLs, pipeline outputs.

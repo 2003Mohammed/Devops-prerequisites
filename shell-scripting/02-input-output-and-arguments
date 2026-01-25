@@ -1,0 +1,29 @@
+# Input, Output, and Arguments
+
+## User Input
+read username
+echo "Hello $username"
+
+## Script Arguments
+$0 → script name
+$1 → first argument
+$2 → second argument
+$@ → all arguments
+$# → number of arguments
+
+Example:
+./deploy.sh prod us-east-1
+
+## Output Redirection
+>  overwrite
+>> append
+
+ls > files.txt
+date >> files.txt
+
+## Error Redirection
+command 2> error.log
+command &> all.log
+
+## DevOps Use Case
+Used in pipelines to capture logs and pass environment-specific values.
