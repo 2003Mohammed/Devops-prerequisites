@@ -1,0 +1,49 @@
+1. Verify Network Reachability
+ping -c 3 8.8.8.8
+
+
+Works → network is up
+
+Fails → interface, route, or firewall issue
+
+2. Check DNS Resolution
+getent hosts google.com
+
+
+If this fails but ping works → DNS problem, not network.
+
+3. Inspect Listening Ports
+ss -lntp
+
+
+Used when:
+
+App is “running”
+
+But traffic can’t reach it
+
+4. Test Remote Connectivity
+curl -I http://service:8080
+
+
+Confirms:
+
+Network
+
+Port
+
+Application response
+
+5. Packet Path Debug
+traceroute google.com
+
+
+Helps identify:
+
+Where traffic is getting blocked
+
+Firewall or routing failures
+
+DevOps Insight
+
+If DNS fails, everything fails — always check DNS early.
