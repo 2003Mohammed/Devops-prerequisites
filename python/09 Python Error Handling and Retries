@@ -1,0 +1,44 @@
+Basic Try/Except (Required Minimum)
+try:
+    with open("config.yaml") as f:
+        data = f.read()
+except FileNotFoundError:
+    print("Config file missing")
+
+Retry Pattern (Common DevOps Template)
+import time
+
+for attempt in range(3):
+    try:
+        result = do_api_call()
+        break
+    except Exception as e:
+        print(f"Attempt {attempt+1} failed")
+        time.sleep(2)
+else:
+    raise RuntimeError("All retries failed")
+
+
+Used in:
+
+Cloud automation
+
+Monitoring scripts
+
+CI/CD helpers
+
+Timeout Protection
+import signal
+
+def timeout_handler(signum, frame):
+    raise TimeoutError()
+
+signal.signal(signal.SIGALRM, timeout_handler)
+signal.alarm(5)
+
+
+Prevents scripts from hanging forever.
+
+DevOps Insight
+
+Reliable automation is not about success paths — it’s about handling failures correctly.
