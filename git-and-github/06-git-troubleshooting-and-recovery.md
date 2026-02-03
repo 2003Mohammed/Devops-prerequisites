@@ -39,9 +39,3 @@ Used when conflicts go wrong.
 DevOps Insight
 
 git reflog is the emergency exit — almost nothing is truly lost in Git.
-
-✅ Commit commands (exact)
-git add networking/02-linux-networking-core-troubleshooting.md
-git add git/02-git-troubleshooting-and-recovery.md
-git commit -m "Add concise networking and git troubleshooting prerequisites"
-git push
