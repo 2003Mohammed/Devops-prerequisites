@@ -33,3 +33,31 @@ Basic Commands:
 - cp new_file.txt copy_file.txt "copy file from source to target destination"
 - mv new_file.txt sample_file.txt "Move(rename)"
 - rm new_file.txt "Remove(Delete)file
+
+---------------------------------------------------------------------------------
+
+Most useful Command:
+
+find | xargs | cat | grep | sort | uniq | awk | tee | head 
+
+- find is useful for finding certain keywords or file or directory's or specific certain thing , Searchs recursively by default. You can use " ls - R " to search files recurively too . 
+- | Pipe is used to connect commands together by sending output of the left command as input to the right command.
+- Xargs is used to take inut from stdin  and turn it into arguments for another command.
+- uniq is used to remove adjacent duplicates , usually used after sort command after pipe .
+- sort is used to sort the lines from file and sort -k and coloum number will specify what to sort on ex sort -k4.
+- ">" Redirection file basically takes the output form the commands and stores it into a file , if file already exists it will overide .
+-">>" Does the same as redirection just that it dosent overrides but appends the output . 
+- exec : Execute a specific command to find directories or files , mostly use a placeholder like "{}" .
+- ; acts as a command separator that allows you to run multiple commands one after another on a single line.
+- \ escape character tells the shell to treat the next character literally rather than a command or special character.
+- rysnc is used to efficienly copying files and directories to have to excetue every file even if file or directories exist with same name , mostly used to backup scirpts or files or logs. 
+
+these are some commands used combining one or more commands studied here :
+ls -R
+find . -type f -name "*.txt"
+find . -type f -name "*.txt" | xargs cat
+find . -type f -name "*.txt" | xargs cat | grep "ERROR"
+find . -type f -name "*.txt" | xargs cat | grep "ERROR" | sort -k4 | uniq -f3
+find . -type f -name "*.txt" | xargs cat | grep "ERROR" | sort -k4 | uniq -f3 > errors.log
+find . -type f -name "*.log" -exec cp {} ./backup \;
+find . -type f -name "*.txt" -exec rsync -R {} ./backup \;
